@@ -1,0 +1,40 @@
+ATL ist siebentages durchschnitt der TSS
+
+
+Die Berechnung der NP – Normalized Power – in Stichpunkten:
+	Berechne die Durchschnittsleistung der 30 zurückliegenden Sekunden in Bewegung für jede Sekunde der Aufzeichnung
+	Berechne die vierte Potenz für jeden Wert aus Schritt 1
+	Berechne den Durchschnitt aus den Werten von Schritt 2
+	Nehme die vierte Wurzel des Wertes aus Schritt 3 – Das ist deine NP – Normalized Power
+
+	
+NP / FTP = IF
+
+TSS = ( sec x NP x IF ) / ( FTP x 3600 ) x 100 = IF^2 sec/3600*100
+sec = Dauer der Einheit in Sekunden
+NP = Normalized Power
+IF = Intensity Factor
+FTP = Functional Threshold Power
+
+
+Source: https://medium.com/critical-powers/formulas-from-training-and-racing-with-a-power-meter-2a295c661b46#:~:text=Normalized%20Power,-Normalized%20Power%20(NP&text=Step%201%3A%20Calculate%20the%20rolling,values%20from%20the%20previous%20step.
+
+
+CTL
+Chronic Training Load (CTL) is calculated as an exponentially weighted moving average of daily TSS with a default time constant of 42 days. 
+
+ATL
+Acute Training Load (ATL) is calculated as an exponentially weighted moving average of daily TSS with a default time constant of 7 days. 
+
+TSB
+Training Stress Balance (TSB) is defined as the difference between CTL and ATL. The concept of TSB is introduced by Andrew Coggan and is discussed in chapter 8 of the book.
+TSB = CTL – ATL
+
+
+VI - Variability Index
+The Variability Index (VI) can be used as a metric for how smoothly paced your workout or race was and is defined as the ratio between NP and average power of a workout. The concept of VI is not introduced by Andrew Coggan but Charles Howe and is discussed in chapter 8 of the book.
+VI = NP / P_avg
+Where:
+VI = Variability Index
+NP = Normalized Power
+P_avg = Average power
